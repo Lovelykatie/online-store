@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Gemstones Studded Earrings",
+    "description": "Elegant Gemstones Studded Earrings.",
+    "price": 299.99,
+    "image": "/images/jewelry1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Gold-Colored Earrings",
+    "description": "Delicate Gold-Colored Latched-back Earrings.",
+    "price": 89.99,
+    "image": "/images/jewelry2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Blue Earrings",
+    "description": "Timeless freshwater Blue Earrings.",
+    "price": 59.99,
+    "image": "/images/jewelry3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Diamond Ring",
+    "description": "Elegant Diamond Ring.",
+    "price": 74.50,
+    "image": "/images/jewelry4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Chakra Bracelet",
+    "description": "Vibrant chakra bracelet on marble beads..",
+    "price": 129.99,
+    "image": "/images/jewelry5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Silver-colored Ring",
+    "description": "Simple Silver-colored Ring on Black Pane.",
+    "price": 39.99,
+    "image": "/images/jewelry6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Flower pearl necklace",
+    "description": "Luxurious flower pearl necklace with emerald.",
+    "price": 49.00,
+    "image": "/images/jewelry7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Silver necklace",
+    "description": "Simple necklace with small green gems.",
+    "price": 24.99,
+    "image": "/images/jewelry8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "  White pearl necklace",
+    "description": "Elegant white pearl necklace.",
+    "price": 69.95,
+    "image": "/images/jewelry9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Gold Bracelet",
+    "description": "Classy Gold bracelet.",
+    "price": 110.00,
+    "image": "/images/jewelry10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Gold Bangle",
+    "description": "A magical moonstone pendant with a dreamy glow.",
+    "price": 58.99,
+    "image": "/images/jewelry11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Silver Bracelet",
+    "description": "Silver braclet with tiny red gems and silver heart-shaped pieces.",
+    "price": 34.99,
+    "image": "/images/jewelry12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Pearl Earrings",
+    "description": "Classic pearl earrings with peacock feather.",
+    "price": 450.00,
+    "image": "/images/jewelry13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Simple Silver Bracelet",
+    "description": "Silver bracelet with tiny pink heart-shaped gems.",
+    "price": 62.50,
+    "image": "/images/jewelry14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Pearl Earrings and Bracelet",
+    "description": "Simple pearl Earring and Bracelet.",
+    "price": 79.99,
+    "image": "/images/jewelry15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Crystal Earrings",
+    "description": "Beautiful Crystal Earrings.",
+    "price": 45.00,
+    "image": "/images/jewelry16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Star rings",
+    "description": "Gold star rings.",
+    "price": 219.99,
+    "image": "/images/jewelry17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Gold diamond Bangle",
+    "description": "Classic gold bangle.",
+    "price": 29.99,
+    "image": "/images/jewelry18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Silver Anklet",
+    "description": "Elegant silver anklet.",
+    "price": 55.25,
+    "image": "/images/jewelry10.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Silver ring with Crystals",
+    "description": "Elegant Silver ring with Crystals.",
+    "price": 33.49,
+    "image": "/images/jewelry20.jpg"
+  }
+]
