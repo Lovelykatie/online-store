@@ -1,36 +1,52 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 
 function Productpage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [notFound, setNotFound] = useState(false);
   const { addToCart } = useCart();
 
   useEffect(() => {
     async function getProduct() {
-      const res = await fetch("/src/data/products.json");
-      const data = await res.json();
-      const found = data.find((item) => item.id === parseInt(id));
-      setProduct(found);
+      try {
+        const res = await fetch("/products.json");
+        const data = await res.json();
+        const found = data.find((item) => item.id === parseInt(id));
+        if (found) {
+          setProduct(found);
+        } else {
+          setNotFound(true);
+        }
+      } catch (err) {
+        console.error("Error fetching product:", err);
+        setNotFound(true);
+      }
     }
 
     getProduct();
   }, [id]);
 
+  if (notFound) return <h2>Product not found.</h2>;
   if (!product) return <h2>Loading...</h2>;
 
   return (
-    <div className="max-w-xl mx-auto">
-      <img src={product.image} alt={product.name} className="w-full h-64 object-cover mb-4" />
+    <div className="max-w-xl mx-auto p-4">
+      <img
+        src={product.image}
+        alt={product.name}
+        className="w-full h-64 object-cover mb-4 rounded"
+      />
       <h1 className="text-2xl font-bold">{product.name}</h1>
-      <p>{product.description}</p>
-      <p className="font-bold mt-2">${product.price}</p>
-      <button onClick={() => addToCart(product)} className="mt-4 bg-green-600 text-white px-4 py-2 rounded">
+      <p className="mb-2">{product.description}</p>
+      <p className="font-bold text-lg mb-4">${product.price}</p>
+      <button
+        onClick={() => addToCart(product)}
+        className="bg-emerald-400 text-white px-4 py-2 rounded hover:bg-emerald-600"
+      >
         Add to Cart
       </button>
-      <br />
-      <Link to="/cart" className="mt-2 text-blue-600 inline-block">Go to Cart</Link>
     </div>
   );
 }

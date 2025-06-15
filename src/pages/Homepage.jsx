@@ -28,7 +28,7 @@ function Homepage() {
     <div className="bg-gray-200 min-h-screen px-4 py-6">
       <h1 className="text-3xl font-bold mb-6 text-center">Jewelry Collection</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {products.map((product) => (
           <div
             key={product.id}

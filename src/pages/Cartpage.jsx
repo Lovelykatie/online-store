@@ -31,7 +31,7 @@ function Cartpage() {
                   <p>Subtotal: ${(item.price * item.quantity).toFixed(2)}</p>
                 </div>
 
-                {/* 🔘 Buttons */}
+                
                 <div className="space-x-2">
                   <button
                     onClick={() => decreaseQuantity(item.id)}
@@ -50,10 +50,18 @@ function Cartpage() {
             ))}
           </ul>
 
-          {/* 🧾 Total Price */}
           <div className="text-right text-xl font-bold">
             Total: ${total.toFixed(2)}
           </div>
+
+          <div className="text-right mt-6">
+            <button
+              className="bg-emerald-400 hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded"
+              onClick={() => alert("Checkout coming soon!")}
+            >
+              Proceed to Checkout
+            </button>
+        </div>
         </div>
       )}
     </div>
