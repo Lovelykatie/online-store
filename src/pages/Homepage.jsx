@@ -9,7 +9,7 @@ function Homepage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("/src/data/products.json");
+      const response = await fetch("/products.json");
       const data = await response.json();
       setProducts(data);
     }
